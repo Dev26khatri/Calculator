@@ -1,0 +1,80 @@
+body {
+  background: linear-gradient(to right, rgb(68, 211, 255), rgb(23, 177, 233));
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  background: linear-gradient(
+    to left,
+    rgb(162, 145, 244),
+    rgb(117, 117, 239),
+    rgb(106, 78, 243),
+    rgb(81, 51, 232),
+    rgb(60, 24, 238),
+    rgb(43, 5, 238)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: end;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: none;
+  cursor: auto;
+  margin-bottom: 10px;
+  background-color: azure;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+  /* box-shadow: none; */
+}
+
+.main-card {
+  width: 100%;
+  max-width: 420px;
+  background-color: antiquewhite;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 20px black;
+  transition: 1s ease;
+}
+.main-card:hover {
+  box-shadow: 3px 3px 20px black;
+}
+.buttons {
+  margin-top: 10px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minimax(3, 2fr));
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 5px;
+  font-size: 1.5rem;
+  background-color: azure;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+button:hover {
+  color: white;
+
+  background-color: rgb(34, 255, 255);
+}
+.Result {
+  grid-column: span 3;
+}
